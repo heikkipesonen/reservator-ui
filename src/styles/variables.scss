@@ -1,0 +1,36 @@
+$grid-gutter-width: 30px;
+$grid-gutter-width-base: $grid-gutter-width;
+$brand-primary: #EAC677;
+$brand-secondary: #FFF4DD;
+$brand-text: #222222;
+$brand-text-on-dark: #FFF4DD;
+$brand-dark: #332921;
+$brand-light: #e3e3e3;
+$brand-text-on-light: $brand-dark;
+$brand-text-on-dark: #dfdfdf;
+$brand-header-font: 'Cinzel Decorative', cursive;
+$brand-text-font: 'Kreon', serif;
+$brand-error: rgb(249, 59, 53);
+$brand-secondary: #ffdb8a;
+$title-number-size: 64px;
+$title-number-font-size: 32px;
+$text-wrapper-bg: #fbf2de;
+
+
+$menu-height: 70px;
+
+@mixin bgGradient () {
+  background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+}
+
+@mixin gradient ($startColor, $endColor) {
+  background: -moz-linear-gradient(top, $startColor 0%, $endColor 100%);
+  background: -webkit-linear-gradient(top, $startColor 0%, $endColor 100%);
+  background: linear-gradient(to bottom, $startColor 0%, $endColor 100%);
+}
+
+@mixin mainGradient () {
+  @include gradient(rgba(255, 120, 0, 0.5), rgba(0,0,0,1))
+}
